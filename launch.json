@@ -1,0 +1,17 @@
+{
+    "configurations": [
+    {
+        "type": "by-gdb",
+        "request": "launch",
+        "name": "Launch(remote)",
+        "program": "${workspaceRoot}/kernel",
+        "cwd": "${workspaceRoot}",
+        "remote": {
+            "enabled": true,
+            "address": ":29148", // <- change this
+            "mode": "remote",
+            "execfile": "${workspaceRoot}/kernel"
+        }
+     }
+    ]
+}
